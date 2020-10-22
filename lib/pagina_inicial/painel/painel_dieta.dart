@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 Container painelDieta() {
   return Container(
-    height: 70,
+    height: 80,
     child: ListView(
       children: [
         Text(

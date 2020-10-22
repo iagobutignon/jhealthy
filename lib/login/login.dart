@@ -19,17 +19,17 @@ class Login extends StatelessWidget {
         color: Color.fromARGB(255, 240, 152, 0),
         child: SingleChildScrollView(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            separador(h: 50),
+            separador(40),
             texto(texto: "jHealthy", tamanho: 60, cor: BRANCO),
-            separador(h: 50),
+            separador(40),
             texto(texto: "Usuário", tamanho: 16, cor: BRANCO),
             textfieldUsuario(),
-            separador(h: 20),
+            separador(20),
             texto(texto: "Senha", tamanho: 16, cor: BRANCO),
             textfieldSenha(),
-            separador(h: 40),
+            separador(40),
             botaoEntrar(nav: () => Navigator.pushNamed(context, '/pagina_inicial')),
-            separador(h: 30),
+            separador(30),
             textCadastrar(nav: () => Navigator.pushNamed(context, "/cadastro_usuario"))
           ]),
         ),

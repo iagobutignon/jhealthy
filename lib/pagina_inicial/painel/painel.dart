@@ -17,13 +17,13 @@ Container painel() {
     child: Column(
       children: [
         painelDia(),
-        separador(h: H),
+        separador(H),
         painelAgua(),
-        separador(h: H),
+        separador(H),
         painelDieta(),
-        separador(h: H),
+        separador(H),
         painelTreinoRealizado(),
-        separador(h: H),
+        separador(H),
         painelTreinoPendente()
       ],
     ),

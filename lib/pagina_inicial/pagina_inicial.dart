@@ -8,13 +8,16 @@ class PaginaInicial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(title: 'jHealthy', nav: () => Navigator.pop(context)),
+      appBar: appBar(
+        title: 'jHealthy', 
+        nav: () => Navigator.pop(context), 
+        info: () => Navigator.pushNamed(context, '/info')),
       body: Container(
         padding: const EdgeInsets.all(10),
         child: Column(
           children: [
             painel(),
-            separador(h: 10),
+            separador(10),
             menu(
               item1: () => Navigator.pushNamed(context, "/agua"),
               item2: () => Navigator.pushNamed(context, "/dieta"),
