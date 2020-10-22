@@ -20,10 +20,10 @@ class _Agua extends State<Agua> {
           backgroundColor: Colors.blue,
       ),
       body: Container(
-        padding: EdgeInsets.all(60),
+        padding: EdgeInsets.all(20),
         width: double.infinity,
         height: double.infinity,
-        color: Color.fromARGB(255, 152, 227, 247),
+        color: Color.fromARGB(200, 152, 227, 247),
         child: 
           Column(
             children: [

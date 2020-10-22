@@ -19,10 +19,10 @@ class _Dieta extends State<Dieta> {
           backgroundColor: Colors.green
       ),
       body: Container(
-        padding: EdgeInsets.all(60),
+        padding: EdgeInsets.all(20),
         width: double.infinity,
         height: double.infinity,
-        color: Color.fromARGB(255, 143, 204, 124),
+        color: Color.fromARGB(200, 143, 204, 124),
         child: 
           Column(
             children: [

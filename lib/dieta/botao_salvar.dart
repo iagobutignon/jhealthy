@@ -5,7 +5,7 @@ RaisedButton botaoSalvar({nav}){
     onPressed: nav,
     textColor: Colors.white,
     color: Colors.green,
-    padding: const EdgeInsets.fromLTRB(80,20,80,20),
+    padding: const EdgeInsets.fromLTRB(80,15,80,15),
     child: const Text('Salvar', style: TextStyle(fontSize: 20)),
   );
 }

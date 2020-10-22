@@ -7,6 +7,8 @@ import 'package:jhealthy/agua/agua.dart';
 import 'package:jhealthy/dieta/dieta.dart';
 import 'package:jhealthy/treino/treino.dart';
 
+import 'info/info.dart';
+
 void main() {
   runApp(MaterialApp(
       title: "jHealthy",
@@ -20,5 +22,6 @@ void main() {
         '/agua': (context) => Agua(),
         '/dieta': (context) => Dieta(),
         '/treino': (context) => Treino(),
+        '/info' : (context) => Info(),
       }));
 }

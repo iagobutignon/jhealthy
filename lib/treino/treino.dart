@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jhealthy/treino/menu/menu.dart';
+import 'package:jhealthy/treino/treino_appbar.dart';
+import 'package:jhealthy/widgets/separador.dart';
 
 class Treino extends StatefulWidget {
   @override
@@ -9,12 +12,18 @@ class _Treino extends State<Treino> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Treino'),
-          backgroundColor: Color.fromARGB(255, 240, 152, 0),
-      ),
+      appBar: treinoAppBar(title: 'Treino'),
       body: Container(
-        
+        padding: EdgeInsets.all(20),
+        color: Color.fromARGB(200, 252, 209, 134),
+        child: 
+          Column(
+            children: [
+              menu(),
+              separador(30),
+              Text('Nenhum treino cadastrado')
+            ],
+          ),
       ),
     );
   }
