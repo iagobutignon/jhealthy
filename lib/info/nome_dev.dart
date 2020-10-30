@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-Expanded nomeDev() {
-  return Expanded(
+Container nomeDev() {
+  return Container(
     child: 
       Center(
         child: 
           Text(
+            "Desenvolvedor: " +
             "Iago de Carvalho Butignon",
             style: 
               new TextStyle(

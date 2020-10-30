@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 Container painelAgua() {
   return Container(
-    height: 35,
+    height: 40,
     child: ListView(
       children: [
         Text(

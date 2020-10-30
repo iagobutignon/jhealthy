@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jhealthy/login/logo.dart';
 import 'package:jhealthy/widgets/separador.dart';
 import 'package:jhealthy/widgets/texto.dart';
 import 'package:jhealthy/login/textfield_usuario.dart';
@@ -19,9 +20,9 @@ class Login extends StatelessWidget {
         color: Color.fromARGB(255, 240, 152, 0),
         child: SingleChildScrollView(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            separador(40),
-            texto(texto: "jHealthy", tamanho: 60, cor: BRANCO),
-            separador(40),
+            separador(0),
+            logo(),
+            separador(0),
             texto(texto: "Usuário", tamanho: 16, cor: BRANCO),
             textfieldUsuario(),
             separador(20),

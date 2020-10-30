@@ -9,7 +9,7 @@ class PaginaInicial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(
-        title: 'jHealthy', 
+        titulo: 'jHealthy', 
         nav: () => Navigator.pop(context), 
         info: () => Navigator.pushNamed(context, '/info')),
       body: Container(

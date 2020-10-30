@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:jhealthy/pagina_inicial/painel/icone_agua.dart';
 
-AppBar appBar({String title, nav, info}) {
+AppBar appBar({String titulo, nav, info}) {
   return AppBar(
-      title: Center(child: Text('jHealthy')),
+      title: Center(child: Text(titulo)),
       leading: 
         new Container(
           child:
@@ -13,9 +14,10 @@ AppBar appBar({String title, nav, info}) {
             ),
         ),
       actions: <Widget>[
+        iconeAgua(),
         IconButton(
           icon: const Icon(Icons.info_outlined, size: 40),
-          tooltip: "Sair",
+          tooltip: "Informações",
           onPressed: info,
         ),
       ],

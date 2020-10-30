@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-Container fotoDev(){
+Container logo(){
   return Container(
     height: 150,
     padding: EdgeInsets.all(10),
     child: ClipRRect(
-    borderRadius: BorderRadius.circular(120),
     child: 
       Image.asset(
-        'assets/foto_dev.jpg',
+        'assets/logo.png',
         scale: 1,
         fit: BoxFit.scaleDown,
       )
