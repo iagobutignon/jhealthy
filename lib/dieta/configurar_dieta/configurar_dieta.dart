@@ -3,23 +3,22 @@ import 'package:jhealthy/dieta/botao_salvar.dart';
 import 'package:jhealthy/dieta/dieta_text.dart';
 import 'package:jhealthy/dieta/help_dieta.dart';
 import 'package:jhealthy/widgets/separador.dart';
-import 'package:jhealthy/widgets/texto.dart';
-import 'app_bar.dart';
-import 'dieta_text_field.dart';
+import 'package:jhealthy/dieta/app_bar.dart';
+import 'package:jhealthy/dieta/dieta_text_field.dart';
 
-class Dieta extends StatefulWidget {
+class ConfigurarDieta extends StatefulWidget {
   @override
-  _Dieta createState() => new _Dieta();
+  _ConfigurarDieta createState() => new _ConfigurarDieta();
 }
 
-class _Dieta extends State<Dieta> {
+class _ConfigurarDieta extends State<ConfigurarDieta> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(
-        titulo: "Dieta",
-        nav: () => { Navigator.pushNamed(context, '/configurar_dieta')},
-        ajuda: () => { helpDieta(context)}),
+      appBar: AppBar(
+        title: Text('Configurar Dieta'),
+        backgroundColor: Colors.green,
+      ),
       body: Container(
         padding: EdgeInsets.all(20),
         width: double.infinity,
@@ -29,19 +28,13 @@ class _Dieta extends State<Dieta> {
           SingleChildScrollView(
             child: Column(
               children: [
-                texto(
-                  texto: "Adicionar refeição",
-                  tamanho: 20,
-                  cor: Colors.white
-                ),
-                separador(30),
-                dietaText("Proteínas (gramas)"),
+                dietaText("Proteínas diária (gramas)"),
                 dietaTextField(),
                 separador(10),
-                dietaText("Carboidratos (gramas)"),
+                dietaText("Carboidratos diário (gramas)"),
                 dietaTextField(),
                 separador(10),
-                dietaText("Lipídios (gramas)"),
+                dietaText("Lipídios diários (gramas)"),
                 dietaTextField(),
                 separador(20),
                 botaoSalvar(nav: () => Navigator.pop(context)),

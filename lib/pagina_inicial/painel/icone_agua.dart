@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-Container fotoDev(){
+Container iconeAgua(){
   return Container(
     height: 150,
     padding: EdgeInsets.all(10),
     child: ClipRRect(
-    borderRadius: BorderRadius.circular(120),
     child: 
       Image.asset(
-        'assets/foto_dev.jpg',
+        'assets/beber_agua.png',
         scale: 1,
         fit: BoxFit.scaleDown,
       )

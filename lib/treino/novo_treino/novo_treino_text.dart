@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Text aguaText(String texto, {double tamanho = 14, Color cor = Colors.black}){
+Text novoTreinoText(String texto, {double tamanho = 14, Color cor = const Color.fromARGB(255, 240, 152, 0)}){
   return Text(
     texto,
     style: 

@@ -8,24 +8,26 @@ import 'package:jhealthy/widgets/separador.dart';
 
 const H = 20;
 
-Container painel() {
-  return Container(
-    padding: EdgeInsets.all(20),
-    height: 400,
-    width: double.infinity,
-    color: Color.fromARGB(200, 252, 209, 134),
-    child: Column(
-      children: [
-        painelDia(),
-        separador(H),
-        painelAgua(),
-        separador(H),
-        painelDieta(),
-        separador(H),
-        painelTreinoRealizado(),
-        separador(H),
-        painelTreinoPendente()
-      ],
+Expanded painel() {
+  return Expanded(
+    child: Container(
+      padding: EdgeInsets.all(20),
+      height: double.infinity,
+      width: double.infinity,
+      color: Color.fromARGB(200, 252, 209, 134),
+      child: Column(
+        children: [
+          painelDia(),
+          separador(H),
+          painelAgua(),
+          separador(H),
+          painelDieta(),
+          separador(H),
+          painelTreinoRealizado(),
+          separador(H),
+          painelTreinoPendente()
+        ],
+      ),
     ),
   );
 }
