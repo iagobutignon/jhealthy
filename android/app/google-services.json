@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "17278527865",
+    "firebase_url": "https://jhealthy-flutter-app.firebaseio.com",
+    "project_id": "jhealthy-flutter-app",
+    "storage_bucket": "jhealthy-flutter-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17278527865:android:73c5d6668579f0703367a8",
+        "android_client_info": {
+          "package_name": "com.example.jhealthy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17278527865-bu67k56gnnorglsgkmikh5k4tvg28hr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA89jcXUhBQk-dyAuzqfzJYRpszkSxugD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17278527865-bu67k56gnnorglsgkmikh5k4tvg28hr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
