@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextField textfieldSenha() {
+TextField textfieldSenha(senhaController) {
   return TextField(
     obscureText: true,
     enableSuggestions: false,
@@ -14,5 +14,6 @@ TextField textfieldSenha() {
       fillColor: Colors.white,
       border: InputBorder.none,
     ),
+    controller: senhaController,
   );
 }

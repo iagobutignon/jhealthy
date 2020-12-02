@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextField textfieldUsuario() {
+TextField textfieldUsuario(usuarioController) {
   return TextField(
     style: new TextStyle(
       fontSize: 22,
@@ -11,5 +11,6 @@ TextField textfieldUsuario() {
       fillColor: Colors.white,
       border: InputBorder.none,
     ),
+    controller: usuarioController,
   );
 }

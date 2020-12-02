@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextField cadastroTextField({bool senha = false}) {
+TextField cadastroTextField(control, {bool senha = false}) {
   return TextField(
     obscureText: senha,
     enableSuggestions: !senha,
@@ -15,5 +15,6 @@ TextField cadastroTextField({bool senha = false}) {
         fillColor: Colors.white,
         border: InputBorder.none,
         contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 0)),
+    controller: control,
   );
 }
