@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextField novoTreinoTextField(){
+TextField novoTreinoTextField(control){
   return TextField(
     style: 
       new TextStyle(
@@ -12,5 +12,6 @@ TextField novoTreinoTextField(){
       fillColor: Colors.white,
       border: InputBorder.none,
     ),
+    controller: control,
   );
 }

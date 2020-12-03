@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:jhealthy/dieta/botao_salvar.dart';
 import 'package:jhealthy/dieta/dieta_text.dart';
@@ -13,6 +14,20 @@ class Dieta extends StatefulWidget {
 }
 
 class _Dieta extends State<Dieta> {
+  var db = FirebaseFirestore.instance;
+  var proteinas = TextEditingController();
+  var carboidratos = TextEditingController();
+  var lipidios = TextEditingController();
+
+  void salvar(){
+    db.collection("dieta").add({
+      "proteinas": proteinas.text,
+      "carboidratos": carboidratos.text,
+      "lipidios": lipidios.text
+    });
+    Navigator.pop(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,15 +51,15 @@ class _Dieta extends State<Dieta> {
                 ),
                 separador(30),
                 dietaText("Proteínas (gramas)"),
-                dietaTextField(),
+                dietaTextField(proteinas),
                 separador(10),
                 dietaText("Carboidratos (gramas)"),
-                dietaTextField(),
+                dietaTextField(carboidratos),
                 separador(10),
                 dietaText("Lipídios (gramas)"),
-                dietaTextField(),
+                dietaTextField(lipidios),
                 separador(20),
-                botaoSalvar(nav: () => Navigator.pop(context)),
+                botaoSalvar(nav: () => {salvar()}),
               ],
             ),
           ),

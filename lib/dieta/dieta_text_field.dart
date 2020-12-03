@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextField dietaTextField(){
+TextField dietaTextField(control){
   return TextField(
     style: 
       new TextStyle(
@@ -12,5 +12,6 @@ TextField dietaTextField(){
       fillColor: Colors.white,
       border: InputBorder.none,
     ),
+    controller: control,
   );
 }

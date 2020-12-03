@@ -1,7 +1,11 @@
+import 'dart:async';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:jhealthy/agua/agua_text_field.dart';
 import 'package:jhealthy/agua/help_agua.dart';
 import 'package:jhealthy/agua/notificacao_agua.dart';
+import 'package:jhealthy/model/aguaModel.dart';
 import 'package:jhealthy/widgets/separador.dart';
 import 'package:jhealthy/agua/app_bar.dart';
 import 'agua_text.dart';
@@ -13,6 +17,18 @@ class Agua extends StatefulWidget {
 }
 
 class _Agua extends State<Agua> {
+  var db = FirebaseFirestore.instance;
+  var meta = TextEditingController();
+  var copo = TextEditingController();
+
+  void salvar(){
+    db.collection('agua').add({
+      "meta": meta.text,
+      "copo": copo.text
+    });
+    Navigator.pop(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(      
@@ -30,14 +46,14 @@ class _Agua extends State<Agua> {
             child: Column(
               children: [
                 aguaText("Meta diária (mililitros)"),
-                aguaTextField(),
+                aguaTextField(meta),
                 separador(10),
                 aguaText("Quantidade de ml do seu copo/garrafa"),
-                aguaTextField(),
+                aguaTextField(copo),
                 separador(10),
                 notificacaoAgua(),
                 separador(20),
-                botaoSalvar(nav: () => Navigator.pop(context)),
+                botaoSalvar(nav: () => salvar()),
               ],
             ),
           ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextField novoTreinoDescricao(){
+TextField novoTreinoDescricao(control){
   return TextField(
     keyboardType: TextInputType.multiline,    
     maxLines: 10,    
@@ -14,5 +14,6 @@ TextField novoTreinoDescricao(){
       fillColor: Colors.white,
       border: InputBorder.none,
     ),
+    controller: control,
   );
 }

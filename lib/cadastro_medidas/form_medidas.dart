@@ -3,7 +3,8 @@ import 'package:jhealthy/cadastro_medidas/cadastro_medidas_text.dart';
 import 'package:jhealthy/cadastro_medidas/cadastro_medidas_text_field.dart';
 import 'package:jhealthy/widgets/separador.dart';
 
-Container formMedidas() {
+Container formMedidas(ombro, torax, bracoDireito, bracoEsquerdo, antebracoDireito, antebracoEsquerdo,
+                  cintura, gluteo, coxaDireita, coxaEsquerda, panturrilhaDireita, panturrilhaEsquerda) {
   return Container(    
     child: 
       Column(
@@ -14,7 +15,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Ombro"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(ombro)
                   ],
                 ),
               ),
@@ -23,7 +24,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Tórax"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(torax)
                   ],
                 ),
               ),              
@@ -36,7 +37,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Braço direito"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(bracoDireito)
                   ],
                 ),
               ),
@@ -45,7 +46,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Braço esquerdo"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(bracoEsquerdo)
                   ],
                 ),
               ),              
@@ -58,7 +59,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Antebraço direito"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(antebracoDireito)
                   ],
                 ),
               ),
@@ -67,7 +68,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Antebraço esquerdo"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(antebracoEsquerdo)
                   ],
                 ),
               ),              
@@ -80,7 +81,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Cintura"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(cintura)
                   ],
                 ),
               ),
@@ -89,7 +90,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Glúteo"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(gluteo)
                   ],
                 ),
               ),              
@@ -102,7 +103,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Coxa direita"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(coxaDireita)
                   ],
                 ),
               ),
@@ -111,7 +112,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Coxa esquerda"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(coxaEsquerda)
                   ],
                 ),
               ),              
@@ -124,7 +125,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Panturrilha Direita"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(panturrilhaDireita)
                   ],
                 ),
               ),
@@ -133,7 +134,7 @@ Container formMedidas() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Panturrilha esquerda"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(panturrilhaEsquerda)
                   ],
                 ),
               ),              

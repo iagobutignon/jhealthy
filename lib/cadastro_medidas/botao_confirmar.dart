@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-RaisedButton botaoConfirmar() {
+RaisedButton botaoConfirmar(nav) {
   return RaisedButton(
-    onPressed: () {},
+    onPressed: nav,
     textColor: Colors.white,
     color: Color.fromARGB(255, 240, 152, 0),
     padding: const EdgeInsets.fromLTRB(80,15,80,15),

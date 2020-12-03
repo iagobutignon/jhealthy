@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TextField aguaTextField(){
+TextField aguaTextField(control){
   return TextField(
     style: 
       new TextStyle(
@@ -12,5 +12,6 @@ TextField aguaTextField(){
       fillColor: Colors.white,
       border: InputBorder.none,
     ),
+    controller: control,
   );
 }

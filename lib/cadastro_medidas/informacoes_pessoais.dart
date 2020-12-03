@@ -3,7 +3,7 @@ import 'package:jhealthy/cadastro_medidas/cadastro_medidas_text.dart';
 import 'package:jhealthy/cadastro_medidas/cadastro_medidas_text_field.dart';
 import 'package:jhealthy/widgets/separador.dart';
 
-Container informacoesPessoais() {
+Container informacoesPessoais(idade, peso, altura) {
   return Container(    
     child: 
       Column(
@@ -14,7 +14,7 @@ Container informacoesPessoais() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Idade"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(idade)
                   ],
                 ),
               ),
@@ -23,7 +23,7 @@ Container informacoesPessoais() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Peso"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(peso)
                   ],
                 ),
               ),
@@ -32,7 +32,7 @@ Container informacoesPessoais() {
                 child: Column(
                   children: [
                     cadastroMedidasText("Altura"),
-                    cadastroMedidasTextField()
+                    cadastroMedidasTextField(altura)
                   ],
                 ),
               )
